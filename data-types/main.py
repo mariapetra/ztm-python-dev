@@ -14,5 +14,5 @@ dict
 # - like an extension that you can add to the language
 
 None
-#means nothing - ansence of value / 0
+#means nothing - absence of value / 0
 
