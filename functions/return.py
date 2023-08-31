@@ -21,3 +21,5 @@ total = sum(10,20)
 print(total)
 
 # prints 30
+
+# Also should note return will exit the code - it will end at return
