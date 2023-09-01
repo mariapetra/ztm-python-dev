@@ -4,7 +4,7 @@ def max_even(li):
     for item in li:
         if item % 2 == 0:
             evens.append(item)
-            return max(evens)
+    return max(evens)
             
 
 print(max_even([3,10,2,3,4,5,11]))
