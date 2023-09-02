@@ -5,7 +5,8 @@ duplicates = []
 
 for letter in some_list:
     if some_list.count(letter) > 1:
-        duplicates.append(letter)
+        if letter not in duplicates:
+            duplicates.append(letter)
 
 print(duplicates)
 
