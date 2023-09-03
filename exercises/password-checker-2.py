@@ -6,6 +6,8 @@
 username = input("Enter your username: ")
 password = input("Enter your password: ")
 pw_length = int(len(password))
-scrambled_pw = ('*' * pw_length)
+scrambled_pw = "*" * pw_length
 
-print(f"Hi {username.capitalize()}, your password, {scrambled_pw} is {pw_length} characters long")
+print(
+    f"Hi {username.capitalize()}, your password, {scrambled_pw} is {pw_length} characters long"
+)
