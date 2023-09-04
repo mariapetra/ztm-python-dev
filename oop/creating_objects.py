@@ -20,8 +20,9 @@ class PlayerCharacter:
     # this will be true for all objects
     # we can use anywhere
     membership = True
-    def __init__(self, name, age):
-        if (PlayerCharacter.membership):
+    # __init__ = constructor
+    def __init__(self, name='anyonymous', age=0):
+        if (PlayerCharacter.membership and age > 18):
             self.name = name
             self.age = age
 
