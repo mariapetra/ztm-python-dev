@@ -30,9 +30,41 @@ class PlayerCharacter:
     def shout(self):
         print(f'my name is {self.name}')
 
+    #decorator
+    #what does this classmethod do?
+    @classmethod
+    adding_things(cls, num1, num2):
+        return num1 + num2
 
 player1 = PlayerCharacter('Maria', 38)
 player1 = PlayerCharacter('Tom', 27)
 
 print(player1.run())
 print(player2.age)
+print(player1.adding_things(2,3))
+
+    # @classmethod
+    # adding_things(num1, num2):
+    #     return num1 + num2
+# returns error - takes 2 positional arguments but 3 were given
+# thats because adding_things is cls (Class) so we update adding_things to include itself (cls)
+
+#we can use this without instantiating a class - it is a class method
+
+print(PlayCharacter.adding_things(2,3))
+#print(CLass.method(attribute,attribute))
+
+# classmethods are not used often but there are cases where it may e usesful eg use cls to instantiate something:
+        # @classmethod
+        # adding_things(cls, num1, num2):
+        #     return ('Teddy',num1 + num2)
+
+        # player3 = PlayerCharacter.adding_things(2,3)
+        # we have just made teddy aged 5
+
+#another way is a static method which works the same way accept you do not have access to the cls
+# eg you could add things but not create the name 0 use this when we dont care about the class state/attributes
+
+@staticmethod
+def adding_things2(num1, num2):
+    return num1 + num2
