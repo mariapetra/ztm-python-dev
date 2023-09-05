@@ -21,3 +21,58 @@ the 4 things OOP does really well
     - we dont always need to code from scratch
     - we dont care how it has been implemented
     - same as a tuple
+
+
+    #Public vs Private Variables
+
+        - We hide info and only give access to things a user in concerned about
+        - we shouldnt hve access to init / name / age
+        - can we make a private variable?
+            - Not in Python
+        - So we do _name or _age
+            - This is a convention - as Python programmers we know that if we see underscore it is a private variable
+            - You can overwrite them but you should know not to touch this
+
+3. Inheritance - allows new objects to take on the properties of existing objects 
+    - You can inherit classes
+    - The below example shows how all users will inherit signin from the User class - they inherit the user class
+
+    eg:
+    ```
+    class User:
+        def sign_in(self):
+            self.name = name
+            self.power = power
+
+    class Wizard(User):
+        def __init__(self, name, power):
+            self.name = name
+            self.power = power
+
+        def attack(self):
+            print(f'attacking with power of {self.power}) 
+
+    class Archer(User):
+        def __init__(self, name, num_arrows):
+            self.name = name
+            self.num_arrows = num_arrows
+
+        def attack(self):
+            print(f'attacking with arrows: arrows left- {self.num_arrows}) 
+
+
+    #instantiate the class
+
+    wizard1 = Wizard('merlin', 50)
+    archer1 = Archer('Robin', 100)
+    wizard1.attack()
+    archer1.attack()
+
+    ```
+    - Python has a tool to check if something is an instance of a class:
+        - isinstance(instance, Class)
+        - wizrd1 = Wizard('Merlin', 60)
+        - isinstance(wizard1, Wizard) = True
+
+    ##Everything in Python inherits from the base object class
+
