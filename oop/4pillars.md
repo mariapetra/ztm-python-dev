@@ -76,3 +76,24 @@ the 4 things OOP does really well
 
     ##Everything in Python inherits from the base object class
 
+4. Polymorphism - poly - many / morphism - form - manyforms
+    - allows us to have many forms
+    - redefine methods for derived classes
+    - obj that gets instantiated can behave in different ways
+    - mpdify classes to specific needs
+    - but also DRY
+
+    - methods belong to objects 
+    - object classes can share the same method name 
+    - but can act differently based on what obj calls them
+
+    - eg in our wizard example - attack acts differently for the wizard or the archer
+
+    def player_attack(char):
+        char.attack()
+    ```
+    player_attack(wizard1)
+    player_attack(archer1)
+
+    ```
+    gives you different results
