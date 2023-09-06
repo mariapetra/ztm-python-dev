@@ -40,3 +40,11 @@ archer1.attack()
 #     - isinstance(wizard1, Wizard) = True
 
 # Super allows you to use another init from the previous class - we can refer to user without having to pass self
+
+# introspection 
+# the ability to stermine the tyoe of an object at runtime - python strength
+# everything in python is an object we can examin/introspect an object
+# python allows us to inspect these properties with some nice functions
+# dir = all of the methods and attributes that the wizard instance has
+# when we use . we are actually using introspection
+print(dir(Wizard))
