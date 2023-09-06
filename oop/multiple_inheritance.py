@@ -34,5 +34,3 @@ class HybridBorg(Wizard, Archer)
 hb1 = HybridBorg('borgi', 50, 100)
 print(hb1.run())
 print(hb1.attack())
-
-
