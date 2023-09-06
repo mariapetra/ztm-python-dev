@@ -1,4 +1,4 @@
-class SuperList():
+class SuperList(list):
     def __len__(self):
         return 1000
 
@@ -10,3 +10,5 @@ print(super_list1[0])
 print(issubclass(list, object))
 
 # access through index - special dunder method - modify it and have it return no matter what 1000
+# if we add list it means we extend the functinoaliity of list
+# issubclass(SuperList, list)
