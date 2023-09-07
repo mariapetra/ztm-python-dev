@@ -14,6 +14,7 @@ DRY
 
 
 Pure function - a simple function
+Guideline rather than absolute - sometimes we need to interact with the outside world
 Something will happen to an input - everytime it says the same thing
 input should = output
 should not have any side effects
