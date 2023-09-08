@@ -19,3 +19,4 @@ print(reduce(lambda item: acc, item: acc+item, my_list)))
 #     return item*2
 
 # once this is run it is forgotten about
+# code = small but less readable - dont confuse others - be careful
