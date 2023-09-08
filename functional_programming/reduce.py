@@ -25,7 +25,7 @@ print(reduce(accumulator, my_list, 0))
 # accumulator will be what this returns
 # next item will be 2
 
-if we change it to 10 we get:
-    10, 11, 13, 16
+# if we change it to 10 we get:
+#     10, 11, 13, 16
 
 # we are adding out item numbers to whatever accumulator we give it and then the number before
