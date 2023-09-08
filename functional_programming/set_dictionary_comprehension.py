@@ -25,3 +25,18 @@ my_list3 = [num*2 for num in range(0,100)]
 my_list3 = [num**2 for num in range(0,100) if num % 2 ==0]
 
 print(my_list_num)
+
+# sets
+my_numbers = {1,2,3,4,5,6,7,8}
+my_list_num = {num for num in range(0,100)}
+my_list3 = {num*2 for num in range(0,100)}
+
+#dictionary
+
+simple_dict = {
+    'a':1,
+    'b':2
+}
+my_dict = {key:value**2 for key, value in simple_dict.items()}
+
+my_dict2 = {num:num*2 for num in [1,2,3]}
