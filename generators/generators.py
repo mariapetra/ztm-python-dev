@@ -63,3 +63,5 @@ next(g)
 # will print 4
 
 # yield pauses the function and comes back to it when next is called
+# if you were to use next after the range has expired eg for a range of 10 you call it 11 times 
+# so you exceed the number of items you will get a StopIteration error
