@@ -27,3 +27,26 @@ while True:
     break
 
 # trys the first thing, except if it doesnt work
+
+def sun(num1, num2):
+    try:
+        return num1 + num2
+    except TypeError as err:
+        print(f'please enter numbers {err}')
+
+print(sum(2,2))
+
+def sun(num1, num2):
+    try:
+        return num1/num2
+    except (TypeError, ZeroDivisionError) as err:
+        print(err)
+
+print(sum(2,2))
+
+# what about if we want to stop our program?
+
+raise ValueError
+raise Exception
+
+# errors are unavoidable - your job is to participate and handle them in your program
