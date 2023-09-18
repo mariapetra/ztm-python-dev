@@ -1,8 +1,16 @@
 from translate import Translator
-to_lang = 'zh'
+translator = Translator(to_lang="ja")
 
 try:
     with open ('./translator.txt', mode='r+') as translated:
-        print(translated.read())
+        text = translated.read()
+        translation = translator.translate(text)
+        print(translation)
 except FileNotFoundError as e:
     print("wrong file path")
+
+
+
+
+
+
