@@ -28,3 +28,15 @@ print(sys)
 sys.argv[0]
 # will allow you to access parameters from your terminal
 
+# specialized data types
+
+from collections import Counter, defaultdict, OrderedDict
+# capitals = class / no capitals = func
+
+li = [1,2,3,4,5,6,7,7]
+print(Counter(li))
+# will create a dict
+
+sentence = 'b;ah blak oskjrkff ugug'
+print(Counter(sentence))
+# will print a set of how many time each letter is in sentence
