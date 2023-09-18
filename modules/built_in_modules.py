@@ -40,3 +40,6 @@ print(Counter(li))
 sentence = 'b;ah blak oskjrkff ugug'
 print(Counter(sentence))
 # will print a set of how many time each letter is in sentence
+
+# defaultdict - will give you a default value if something does not exist
+# ordereddict - will retain the order that you insert into a dict
