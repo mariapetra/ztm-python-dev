@@ -42,4 +42,23 @@ print(Counter(sentence))
 # will print a set of how many time each letter is in sentence
 
 # defaultdict - will give you a default value if something does not exist
-# ordereddict - will retain the order that you insert into a dict
+# ordereddict - will retain the order that you insert into a dict - not required from 3.7 dicts are now ordered by default
+# https://softwaremaniacs.org/blog/2020/02/05/dicts-ordered/en/
+
+# https://stackoverflow.com/questions/176011/python-list-vs-array-when-to-use
+
+from datetime
+from time import time
+from array import array
+
+# lists in python are called arrays in other lang sometimes
+# arrays take up less memory and perform faster
+# tell it what type of data it will hold
+
+arr = array('i', [1,2,3])
+
+(datetime.time(5,45,2))
+# will create time object
+
+datetime.date.today()
+# will add todays date
