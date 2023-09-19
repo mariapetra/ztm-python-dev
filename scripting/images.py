@@ -20,3 +20,11 @@ print(img.mode)
 
 print(dir(img))
 # will show all the things we can use
+
+# resize astro image
+
+astro = Image.open("./images/astro.jpg")
+astro.thumbnail((300, 300))
+astro.save("small_astro.png", "png")
+
+# will keep aspect ratio
