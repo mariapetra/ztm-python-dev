@@ -29,7 +29,7 @@ class TestTesting(unittest.TestCase)
     def tearDown(self):
         print('cleaning up')
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     unittest.testing()
 
 # why is this useful? - you have more than one file and each module tested
