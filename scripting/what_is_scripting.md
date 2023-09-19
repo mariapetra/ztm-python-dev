@@ -1,0 +1,3 @@
+- a general term to say we are writing scripts using py to do something for us
+- make our lives easier with python
+- processing images/working with files/send email/text messages / twitter bot / password checker
