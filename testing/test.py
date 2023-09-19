@@ -38,3 +38,4 @@ if __name__ == '__main__':
 # -v = verbose (Which tests have we run and which are ok and which have failed)
 
 # setup will run before each function
+# there are an infinite number of tests you can write - you cant cover everything
