@@ -27,4 +27,5 @@ astro = Image.open("./images/astro.jpg")
 astro.thumbnail((300, 300))
 astro.save("small_astro.png", "png")
 
+print(astro.size)
 # will keep aspect ratio
