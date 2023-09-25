@@ -27,16 +27,18 @@
 #     smtp.send_message(email)
 #     print("all good boss")
 
-import smtplib as smtp
+import smtplib
+from email.message import EmailMessage
 
-connection = smtp.SMTP_SSL("smtp.gmail.com", 465)
+email = EmailMessage()
+email["from"] = "Maria Claydon"
+email["to"] = "mariatestingpython@gmail.com"
+email["subject"] = "You won 1,000,000 dollars!"
+email.set_content("I am unstoppable")
 
-email_addr = "mariatestingpython@gmail.com"
-email_passwd = "csvr nnud gpsb gmuh"
-connection.login(email_addr, email_passwd)
-connection.sendmail(
-    from_addr=email_addr,
-    to_addrs="mariatestingpython@gmail.com",
-    msg="Sent from my IDE. Hehe",
-)
-connection.close()
+with smtplib.SMTP(host="smtp.gmail.com", port=486) as smtp:
+    smtp.ehlo()
+    smtp.starttls()
+    smtp.login("mariatestingpython@gmail.com", "tlqouquytdjberpd")
+    smtp.send_message(email)
+    print("All good boss")
