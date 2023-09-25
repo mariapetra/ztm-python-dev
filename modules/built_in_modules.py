@@ -14,11 +14,12 @@ print(dir(random))
 # shows all methods available on this package
 
 print(random.random())
-print(random.int(1,10))
-print(random.choice([1,2,3,4,5]))
+print(random.int(1, 10))
+print(random.choice([1, 2, 3, 4, 5]))
 
 from random import shuffle
 import random as oolalal
+
 # (can do this to avoid name collisions but always import only what you need)
 
 import sys
@@ -31,13 +32,14 @@ sys.argv[0]
 # specialized data types
 
 from collections import Counter, defaultdict, OrderedDict
+
 # capitals = class / no capitals = func
 
-li = [1,2,3,4,5,6,7,7]
+li = [1, 2, 3, 4, 5, 6, 7, 7]
 print(Counter(li))
 # will create a dict
 
-sentence = 'b;ah blak oskjrkff ugug'
+sentence = "b;ah blak oskjrkff ugug"
 print(Counter(sentence))
 # will print a set of how many time each letter is in sentence
 
@@ -47,17 +49,16 @@ print(Counter(sentence))
 
 # https://stackoverflow.com/questions/176011/python-list-vs-array-when-to-use
 
-from datetime
-from time import time
+from datetime import time
 from array import array
 
 # lists in python are called arrays in other lang sometimes
 # arrays take up less memory and perform faster
 # tell it what type of data it will hold
 
-arr = array('i', [1,2,3])
+arr = array("i", [1, 2, 3])
 
-(datetime.time(5,45,2))
+(datetime.time(5, 45, 2))
 # will create time object
 
 datetime.date.today()
