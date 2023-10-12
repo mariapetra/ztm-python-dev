@@ -1,23 +1,17 @@
-from flask import Flask, render_template, send_from_directory
-import os
+from flask import Flask, render_template, send_from_directory, url_for
 
 app = Flask(__name__)
 
 
-@app.route("/<username>/<int:post_id>")
-def hello_world(username=None, post_id=None):
-    return render_template("index.html", name=username, post_id=post_id)
+@app.route("/")
+def my_home():
+    return render_template("index.html")
 
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
+@app.route("/<string:pag_name>")
+def html_page(page_name):
+    return render_template(page_name)
 
-
-# @app.route("/favicon.ico")
-# def favicon():
-#     return send_from_directory(
-#         os.path.join(app.root_path, "static"),
-#         "favicon.ico",
-#         mimetype="favicon.ico",
-#     )
+# @app.route("/submit_form" methods=['POST', 'GET'])
+# def submit_form():
+#     retr
